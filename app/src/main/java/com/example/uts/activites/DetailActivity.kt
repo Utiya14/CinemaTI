@@ -37,21 +37,22 @@ class DetailActivity : AppCompatActivity() {
 
     private fun getYoutubeUrl(tittle: String): String {
         val videoIdMap = hashMapOf(
-            "Fast X" to "https://youtu.be/eoOaKN4qCKw",
-            "Transformers: Rise of the Beasts" to "https://youtu.be/itnqEauWQZM",
-            "Sang Pencerah" to "https://youtu.be/hXz16kfZhRw",
-            "Pengabdi Setan" to "https://youtu.be/0hSptYxWB3E",
-            "Comic 8" to "https://youtu.be/3DSldkw35n4",
-            "The Last : Naruto The Movie" to "The Last : Naruto The Movie",
-            "One Piece Film Red" to "https://www.youtube.com/watch?v=89JWRYEIG-s",
-            "Demon Slayer The Movie" to "https://www.youtube.com/watch?v=bFwdl2PDAFM&t=1s",
-            "Doraemon Stand By Me 2" to "https://www.youtube.com/watch?v=oiCwcpB837A",
-            "https://www.youtube.com/watch?v=FHgm89hKpXU" to "https://www.youtube.com/watch?v=FHgm89hKpXU"
+            "Fast X" to "eoOaKN4qCKw",
+            "Transformers: Rise of the Beasts" to "itnqEauWQZM",
+            "Sang Pencerah" to "hXz16kfZhRw",
+            "Pengabdi Setan" to "0hSptYxWB3E",
+            "Comic 8" to "3DSldkw35n4",
+            "The Last : Naruto The Movie" to "tA3yE4_t6SY",
+            "One Piece Film Red" to "89JWRYEIG-s",
+            "Demon Slayer The Movie" to "bFwdl2PDAFM",
+            "Doraemon Stand By Me 2" to "oiCwcpB837A",
+            "Dragon Ball Super: Broly" to "FHgm89hKpXU"
         )
 
         val videoId = videoIdMap[tittle] ?: ""
         return "https://www.youtube.com/watch?v=$videoId"
     }
+
 
     private fun setVariable() {
         item = intent.getSerializableExtra("object") as ItemsDomain
